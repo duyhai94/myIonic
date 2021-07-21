@@ -1,20 +1,67 @@
 <ion-tabs>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
-    </ion-tab-button>
+    <ion-tab-bar slot="bottom">
+        <div class="border-container">
+            <!-- danh sach menu -->
+            <div class="list">
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
-    </ion-tab-button>
+                <div class="item" [class.item-active]="route == 1" (click)="routeTo(1)">
+                    <ion-icon name="ellipse"></ion-icon>
+                </div>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
+                <div class="item" [class.item-active]="route == 2" (click)="routeTo(2)">
+                    <ion-icon name="ellipse"></ion-icon>
+                </div>
+
+
+                <div class="item" [class.item-active]="route == 3" (click)="routeTo(3)">
+                    <ion-icon name="ellipse"></ion-icon>
+                </div>
+
+
+                <div class="item" [class.item-active]="route == 4" (click)="routeTo(4)">
+                    <ion-icon name="ellipse"></ion-icon>
+                </div>
+
+
+                <div class="item" [class.item-active]="route == 5" (click)="routeTo(5)">
+                    <ion-icon name="ellipse"></ion-icon>
+                </div>
+
+            </div>
+
+
+            <!-- ve cung tron -->
+            <div class="curves">
+                <div class="c-none" [class.c-active]="route ==1">
+                </div>
+                <div class="c-none" [class.c-active]="route ==2">
+                </div>
+                <div class="c-none" [class.c-active]="route ==3">
+                </div>
+                <div class="c-none" [class.c-active]="route ==4">
+                </div>
+                <div class="c-none" [class.c-active]="route ==5">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </ion-tab-bar>
 
 </ion-tabs>
+
+
+<!-- <ion-tab-button tab="tab1">
+            <ion-icon name="triangle"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="tab2">
+            <ion-icon name="ellipse"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="tab3">
+            <ion-icon name="square"></ion-icon>
+        </ion-tab-button> -->

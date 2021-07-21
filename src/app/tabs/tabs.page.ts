@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
-
+  route = 1;
   constructor() {}
+  routeTo(id) {    
+    this.route = id
 
+  }
 }
